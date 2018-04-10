@@ -36,10 +36,6 @@ export class AppComponent implements OnInit{
       console.log(this.problems);
     });
   }
-  show(d) {
-    console.log('my d ' d);
-    return JSON.stringify(d);
-  }
   selectCountry(value) {
     this.appService.getByCountry(value).subscribe(res => {
       this.data = res;
